@@ -9,52 +9,59 @@
     body {
       margin: 0;
       font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
-      background: #f7f9fc;
-      color: #333;
+      background: linear-gradient(180deg, #f7f2e8, #eef5f2);
+      color: #2f2f2f;
       line-height: 1.7;
     }
 
     header {
-      background: linear-gradient(135deg, #b9e6ff, #d7f9e9);
-      padding: 50px 20px;
+      background: linear-gradient(135deg, #cde7dc, #dbe9f5);
+      padding: 60px 20px;
       text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.3rem;
-      color: #1b3a57;
+      font-size: 2.4rem;
+      color: #1f3a34;
+      letter-spacing: 1px;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      color: #2d4d5f;
+      margin-top: 12px;
+      font-size: 1.05rem;
+      color: #2f4d47;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 950px;
       margin: 0 auto;
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
 
     .card {
-      background: white;
-      border-radius: 18px;
-      padding: 25px;
-      margin-bottom: 20px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(6px);
+      border-radius: 22px;
+      padding: 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border: 1px solid rgba(255,255,255,0.6);
     }
 
     h2 {
       margin-top: 0;
-      color: #1b3a57;
+      color: #1f3a34;
+      font-size: 1.5rem;
     }
 
     .services {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 15px;
+      gap: 16px;
     }
 
     @media (min-width: 700px) {
@@ -64,20 +71,22 @@
     }
 
     .service-box {
-      background: #f1f8ff;
-      border-radius: 15px;
+      background: rgba(247, 252, 249, 0.95);
+      border-radius: 18px;
       padding: 18px;
-      border: 1px solid #d6ecff;
+      border: 1px solid rgba(170, 210, 190, 0.5);
     }
 
     .service-box h3 {
       margin: 0 0 10px 0;
-      color: #234b63;
+      color: #2a4c44;
+      font-size: 1.1rem;
     }
 
     .service-box p {
       margin: 0;
       font-size: 0.95rem;
+      color: #444;
     }
 
     .info-list {
@@ -88,35 +97,117 @@
       text-align: center;
     }
 
+    .btn-area {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      margin-top: 18px;
+    }
+
     .btn {
       display: inline-block;
-      padding: 12px 20px;
-      background: #06c755;
+      padding: 13px 22px;
+      background: #1db954;
       color: white;
-      border-radius: 12px;
+      border-radius: 14px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 10px;
       transition: 0.2s;
+      min-width: 240px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     }
 
     .btn:hover {
-      background: #04a745;
+      background: #159646;
+      transform: translateY(-2px);
+    }
+
+    .btn-mail {
+      background: #4a90e2;
+    }
+
+    .btn-mail:hover {
+      background: #2f77cc;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       font-size: 0.85rem;
       color: #666;
     }
 
     .note {
-      background: #fff6e5;
-      border: 1px solid #ffe2a6;
-      padding: 15px;
-      border-radius: 12px;
+      background: rgba(255, 246, 229, 0.9);
+      border: 1px solid rgba(255, 226, 166, 0.8);
+      padding: 16px;
+      border-radius: 16px;
       font-size: 0.9rem;
+      color: #5a4a2d;
+    }
+
+    /* ===== 料金表 ===== */
+    .price-table {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 15px;
+    }
+
+    @media (min-width: 700px) {
+      .price-table {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .price-item {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(200, 220, 210, 0.7);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .price-item h3 {
+      margin: 0 0 10px 0;
+      color: #2a4c44;
+      font-size: 1.1rem;
+    }
+
+    .price-item p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .discount-box {
+      background: rgba(235, 245, 255, 0.95);
+      border: 1px solid rgba(180, 210, 240, 0.7);
+      padding: 16px;
+      border-radius: 16px;
+      margin-top: 22px;
+      font-size: 0.95rem;
+      color: #2f4d5f;
+    }
+
+    .link-list a {
+      color: #2f77cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link-list a:hover {
+      text-decoration: underline;
+    }
+
+    .sub-card {
+      margin-top: 20px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(245, 250, 255, 0.95);
+      border: 1px solid rgba(180, 210, 240, 0.7);
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -125,7 +216,7 @@
 
   <header>
     <h1>sho｜サポート募集</h1>
-    <p>仙台・オンライン対応｜相談 / ギター / バドミントン / 力仕事</p>
+    <p>仙台・オンライン対応｜相談 / ギター / バドミントン / 動画編集 / 力仕事</p>
   </header>
 
   <div class="container">
@@ -134,7 +225,7 @@
       <h2>はじめまして</h2>
       <p>
         shoです。<br>
-        「ちょっと誰かに相談したい」「ギターを教えてほしい」「運動を教えてほしい」など、<br>
+        「ちょっと誰かに相談したい」「ギターを始めたい」「運動を教えてほしい」など、<br>
         気軽に頼れる存在になれたらと思って活動しています。
       </p>
       <p>
@@ -150,15 +241,17 @@
           <h3>🗣 人の相談・話し相手</h3>
           <p>
             不安、悩み、愚痴、考えの整理など。<br>
-            話すだけでも気持ちが軽くなることがあります。何でも聞きます。
+            話すだけでも気持ちが軽くなることがあります。
           </p>
         </div>
 
         <div class="service-box">
-          <h3>🎸 ギター指導</h3>
+          <h3>🎸 ギター指導（初心者向け）</h3>
           <p>
-            初心者～中級者向け。<br>
-            基礎、コード、リズム、簡単なアドリブから機材相談まで。
+            ギターがメインです。これから始めたい人歓迎。<br>
+            チューニング、持ち方、コード、リズム、簡単な曲までサポートします。<br>
+            初心者の方ならベースも対応できます。<br>
+            対面ならギター数本・ベース1本あるので試し弾きも可能です。
           </p>
         </div>
 
@@ -166,15 +259,26 @@
           <h3>🏸 バドミントン指導</h3>
           <p>
             基本フォーム、フットワーク、ショット練習など。<br>
-            「基礎からしっかり」もOKです。
+            初心者～中級者向けにサポートします。<br>
+            ジュニアチームの練習補助も対応可能です。
           </p>
         </div>
 
         <div class="service-box">
-          <h3>💪 力仕事のお手伝い</h3>
+          <h3>🎬 動画編集・YouTube投稿サポート</h3>
           <p>
-            荷物運び、軽い引っ越し補助、片付けなど。<br>
-            「ちょっとだけ手が欲しい」も歓迎です。
+            スマホアプリ「VLLO」を使った編集が可能です。<br>
+            カット編集、テロップ（簡易）、BGM、効果音、ショート動画化など。<br>
+            YouTubeにアップする方法のサポートもできます。<br>
+            VLLO内のBGM・効果音素材（有料プラン）を使った編集も可能です。
+          </p>
+        </div>
+
+        <div class="service-box">
+          <h3>💪 力仕事・生活サポート</h3>
+          <p>
+            荷物運び、片付け、買い物補助など。<br>
+            「ちょっと手が欲しい」も歓迎です。
           </p>
         </div>
       </div>
@@ -183,48 +287,198 @@
     <div class="card">
       <h2>対応エリア</h2>
       <ul class="info-list">
-        <li>仙台周辺（対面、オンライン対応）</li>
+        <li>仙台周辺（対面対応）</li>
         <li>全国（オンライン対応）</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>料金について</h2>
+      <h2>料金について（目安）</h2>
+
       <p>
-        料金は現在「相談しながら決める」形で考えています。<br>
-        内容・時間・場所によって柔軟に対応します。
+        料金は基本的に下記の通りです。<br>
+        内容や条件によって変動する場合があるため、まずは気軽に相談してください。
       </p>
-      <p>
-        「まずは軽く聞いてみたい」でも大丈夫です。
+
+      <div class="price-table">
+
+        <div class="price-item">
+          <h3>🗣 相談・話し相手（オンライン）</h3>
+          <p><b>30分：2,500円</b></p>
+          <p><b>60分：4,000円</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            使用ツール：Zoom / LINE通話 / Google Meet
+          </p>
+        </div>
+
+        <div class="price-item">
+          <h3>🎸 ギター指導（オンライン）</h3>
+          <p><b>30分：2,500円</b></p>
+          <p><b>60分：4,000円</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            使用ツール：Zoom（おすすめ）/ LINE通話 / Google Meet
+          </p>
+        </div>
+
+        <div class="price-item">
+          <h3>🎬 動画編集レクチャー（VLLO）</h3>
+          <p><b>60分：4,500円</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            カット編集・テロップ（簡易）・BGM・効果音・ショート動画化など
+          </p>
+        </div>
+
+        <div class="price-item">
+          <h3>🎬 YouTube投稿サポート</h3>
+          <p><b>60分：4,500円</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            アップロード、タイトル、概要欄、サムネ相談など
+          </p>
+        </div>
+
+        <div class="price-item">
+          <h3>🎬 動画編集代行（単発）</h3>
+          <p><b>ショート（〜60秒）：3,000円〜</b></p>
+          <p><b>YouTube（〜5分）：6,000円〜</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            ※テロップが多い場合やフル字幕は追加料金になります
+          </p>
+        </div>
+
+        <div class="price-item">
+          <h3>🎸 ギター指導（対面：仙台周辺）</h3>
+          <p><b>60分：4,000円</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            ※スタジオ代は別途（割り勘 or 実費）
+          </p>
+          <p style="font-size: 0.9rem; color: #555;">
+            ※交通費が発生する場合は事前に相談します
+          </p>
+        </div>
+
+        <div class="price-item">
+          <h3>🎸 機材購入相談・同行</h3>
+          <p><b>60分：4,000円〜</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            楽器店での試奏サポート、アンプ・エフェクター相談など
+          </p>
+          <p style="font-size: 0.9rem; color: #555;">
+            ※同行の場合は交通費別途
+          </p>
+        </div>
+
+        <div class="price-item">
+          <h3>🏸 バドミントン指導（対面：仙台周辺）</h3>
+          <p><b>60分：4,000円〜</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            ※体育館代・コート代は別途
+          </p>
+        </div>
+
+        <div class="price-item">
+          <h3>🏸 ジュニアチーム練習補助</h3>
+          <p><b>60分：4,000円〜</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            ※体育館代・交通費は別途
+          </p>
+        </div>
+
+        <div class="price-item">
+          <h3>💪 力仕事・生活サポート</h3>
+          <p><b>軽めの作業：3,500円〜</b></p>
+          <p><b>重めの作業：1時間 5,000円〜</b></p>
+          <p style="font-size: 0.9rem; color: #555;">
+            内容・時期（夏季作業など）により変動します
+          </p>
+        </div>
+
+      </div>
+
+      <div class="discount-box">
+        <b>初回割引（初めての方）</b><br>
+        初回は気軽に試せるように、<b>500円引き</b>で対応します。<br>
+        （例：30分 2,000円 / 60分 3,500円）<br>
+        ※対面の場合、交通費・施設代は別途になります。
+      </div>
+
+      <div class="sub-card">
+        <b>🎬 月契約プラン（ショート編集：〜60秒）</b><br><br>
+        ・月4本まで：<b>10,000円</b><br>
+        ・月6本まで：<b>13,500円</b><br>
+        ・月8本まで：<b>18,000円</b><br><br>
+
+        <span style="color:#555; font-size:0.9rem;">
+          ※素材（動画・画像など）は依頼者側で用意してください<br>
+          ※修正は1回まで（軽微なもの）<br>
+          ※フル字幕・大量テロップは追加料金<br>
+          ※納期は混雑状況により相談になります<br>
+          ※月内消化（翌月繰越なし）
+        </span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>作例・参考リンク</h2>
+      <ul class="info-list link-list">
+        <li>
+          ライブ映像（編集例）：
+          <a href="https://youtu.be/XB93TZEgNYE" target="_blank">YouTubeで見る</a>
+        </li>
+        <li>
+          AIホラー動画（制作例）：
+          <a href="https://youtu.be/yKgGy-7lCn4?si=dahJWDgPYsNsTb1z" target="_blank">YouTubeで見る</a>
+        </li>
+        <li>
+          note記事（作成例）：
+          <a href="https://note.com/proper_acacia969/n/nc5ebd950a8e8?sub_rt=share_pw" target="_blank">noteで見る</a>
+        </li>
+      </ul>
+      <p style="font-size: 0.9rem; color: #555;">
+        ※動画編集はVLLOを使用します（スマホ編集中心です）。<br>
+        VLLO内のBGM・効果音素材（有料プラン）を使った編集も可能です。
       </p>
     </div>
 
     <div class="card">
       <h2>依頼の流れ</h2>
       <ol class="info-list">
-        <li>LINEで連絡（相談内容を簡単に）</li>
-        <li>日時や場所を相談</li>
-        <li>実施（オンライン or 対面）</li>
-        <li>終了後にお支払い（必要な場合）</li>
+        <li>LINEまたはメールで連絡（内容を簡単に）</li>
+        <li>日時や方法（オンライン or 対面）を相談</li>
+        <li>実施</li>
+        <li>終了後にお支払い</li>
       </ol>
+
+      <p style="margin-top: 15px; font-size: 0.9rem; color: #555;">
+        ※本業の都合により、返信が遅れる場合があります。<br>
+        また、繁忙期はお受けできない場合もありますが、できる範囲で対応します。
+      </p>
     </div>
 
     <div class="card note">
       <b>※注意</b><br>
       相談サービスは医療・心理治療ではありません。<br>
-      診断・治療・専門的な判断が必要な内容は対応できません。
+      診断・治療・専門的な判断が必要な内容は対応できません。<br><br>
+      動画編集について：著作権のある音源・映像素材の使用は基本的に対応できません。<br>
+      使用素材はVLLOの利用規約に準拠します。
     </div>
 
     <div class="card contact">
       <h2>お問い合わせ</h2>
       <p>依頼・質問は、下のボタンから連絡してください。</p>
 
-      <a class="btn" href="https://line.me/ti/p/RqET9qmJWf" target="_blank">
-        LINEで問い合わせる
-      </a>
+      <div class="btn-area">
+        <a class="btn" href="https://line.me/ti/p/RqET9qmJWf" target="_blank">
+          LINEで問い合わせる
+        </a>
+
+        <a class="btn btn-mail" href="mailto:sho.support.sendai@gmail.com">
+          メールで問い合わせる
+        </a>
+      </div>
 
       <p style="margin-top: 15px; font-size: 0.9rem; color: #555;">
-        ※ボタンを押すとLINEが開きます。
+        ※返信はできるだけ早めにします。<br>
+        ※内容によってはお断りする場合があります。
       </p>
     </div>
 
