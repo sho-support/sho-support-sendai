@@ -43,7 +43,7 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.88);
       backdrop-filter: blur(6px);
       border-radius: 22px;
       padding: 28px;
@@ -93,6 +93,56 @@
       padding-left: 18px;
     }
 
+    .link-list a {
+      color: #2f77cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link-list a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      background: rgba(255, 246, 229, 0.9);
+      border: 1px solid rgba(255, 226, 166, 0.8);
+      padding: 16px;
+      border-radius: 16px;
+      font-size: 0.9rem;
+      color: #5a4a2d;
+    }
+
+    .price-section {
+      margin-top: 20px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(245, 250, 255, 0.95);
+      border: 1px solid rgba(180, 210, 240, 0.7);
+    }
+
+    .price-section h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #2a4c44;
+    }
+
+    .price-section p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .discount-box {
+      background: rgba(235, 245, 255, 0.95);
+      border: 1px solid rgba(180, 210, 240, 0.7);
+      padding: 16px;
+      border-radius: 16px;
+      margin-top: 22px;
+      font-size: 0.95rem;
+      color: #2f4d5f;
+    }
+
     .contact {
       text-align: center;
     }
@@ -138,77 +188,6 @@
       font-size: 0.85rem;
       color: #666;
     }
-
-    .note {
-      background: rgba(255, 246, 229, 0.9);
-      border: 1px solid rgba(255, 226, 166, 0.8);
-      padding: 16px;
-      border-radius: 16px;
-      font-size: 0.9rem;
-      color: #5a4a2d;
-    }
-
-    /* ===== 料金表 ===== */
-    .price-table {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      margin-top: 15px;
-    }
-
-    @media (min-width: 700px) {
-      .price-table {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .price-item {
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(200, 220, 210, 0.7);
-      border-radius: 18px;
-      padding: 18px;
-    }
-
-    .price-item h3 {
-      margin: 0 0 10px 0;
-      color: #2a4c44;
-      font-size: 1.1rem;
-    }
-
-    .price-item p {
-      margin: 5px 0;
-      font-size: 0.95rem;
-      color: #444;
-    }
-
-    .discount-box {
-      background: rgba(235, 245, 255, 0.95);
-      border: 1px solid rgba(180, 210, 240, 0.7);
-      padding: 16px;
-      border-radius: 16px;
-      margin-top: 22px;
-      font-size: 0.95rem;
-      color: #2f4d5f;
-    }
-
-    .link-list a {
-      color: #2f77cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .link-list a:hover {
-      text-decoration: underline;
-    }
-
-    .sub-card {
-      margin-top: 20px;
-      padding: 18px;
-      border-radius: 18px;
-      background: rgba(245, 250, 255, 0.95);
-      border: 1px solid rgba(180, 210, 240, 0.7);
-      font-size: 0.95rem;
-    }
   </style>
 </head>
 
@@ -216,7 +195,7 @@
 
   <header>
     <h1>sho｜サポート募集</h1>
-    <p>仙台・オンライン対応｜相談 / ギター / バドミントン / 動画編集 / 力仕事</p>
+    <p>仙台・オンライン対応｜相談 / ギター / バドミントン / 動画編集 / 撮影 / 力仕事</p>
   </header>
 
   <div class="container">
@@ -250,8 +229,8 @@
           <p>
             ギターがメインです。これから始めたい人歓迎。<br>
             チューニング、持ち方、コード、リズム、簡単な曲までサポートします。<br>
-            初心者の方ならベースも対応できます。<br>
-            対面ならギター数本・ベース1本あるので試し弾きも可能です。
+            初心者の方ならベースも対応できます。<br><br>
+            また、ライブ映像のような動画編集（簡易）も対応可能です。
           </p>
         </div>
 
@@ -260,17 +239,26 @@
           <p>
             基本フォーム、フットワーク、ショット練習など。<br>
             初心者～中級者向けにサポートします。<br>
-            ジュニアチームの練習補助も対応可能です。
+            ジュニアチームの練習補助も、状況次第で対応可能です。
           </p>
         </div>
 
         <div class="service-box">
-          <h3>🎬 動画編集・YouTube投稿サポート</h3>
+          <h3>🎬 動画編集・YouTube投稿サポート（VLLO）</h3>
           <p>
             スマホアプリ「VLLO」を使った編集が可能です。<br>
             カット編集、テロップ（簡易）、BGM、効果音、ショート動画化など。<br>
             YouTubeにアップする方法のサポートもできます。<br>
             VLLO内のBGM・効果音素材（有料プラン）を使った編集も可能です。
+          </p>
+        </div>
+
+        <div class="service-box">
+          <h3>🎥 ライブ撮影（固定カメラ）</h3>
+          <p>
+            ライブ撮影に同行できます。<br>
+            カメラは固定で撮影します。<br>
+            使用機材：Xperia 1 VII（プロ機材ではありません）
           </p>
         </div>
 
@@ -300,98 +288,91 @@
         内容や条件によって変動する場合があるため、まずは気軽に相談してください。
       </p>
 
-      <div class="price-table">
+      <div class="price-section">
+        <h3>🗣 相談・話し相手（オンライン）</h3>
+        <p><b>30分：2,500円</b></p>
+        <p><b>60分：4,000円</b></p>
+        <p style="font-size:0.9rem; color:#555;">
+          使用ツール：Zoom / LINE通話 / Google Meet
+        </p>
+      </div>
 
-        <div class="price-item">
-          <h3>🗣 相談・話し相手（オンライン）</h3>
-          <p><b>30分：2,500円</b></p>
-          <p><b>60分：4,000円</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            使用ツール：Zoom / LINE通話 / Google Meet
-          </p>
-        </div>
+      <div class="price-section">
+        <h3>🎸 ギター指導（初心者向け）</h3>
+        <p><b>オンライン 30分：2,500円</b></p>
+        <p><b>オンライン 60分：4,000円</b></p>
+        <p style="font-size:0.9rem; color:#555;">
+          使用ツール：Zoom（おすすめ）/ LINE通話 / Google Meet
+        </p>
+        <p><b>対面（仙台周辺）60分：4,000円</b></p>
+        <p style="font-size:0.9rem; color:#555;">
+          ※スタジオ代は別途（割り勘 or 実費）<br>
+          ※交通費が発生する場合は事前に相談します
+        </p>
+        <p><b>機材購入相談・同行（60分）：4,000円〜</b></p>
+        <p style="font-size:0.9rem; color:#555;">
+          ※同行の場合は交通費別途
+        </p>
+      </div>
 
-        <div class="price-item">
-          <h3>🎸 ギター指導（オンライン）</h3>
-          <p><b>30分：2,500円</b></p>
-          <p><b>60分：4,000円</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            使用ツール：Zoom（おすすめ）/ LINE通話 / Google Meet
-          </p>
-        </div>
+      <div class="price-section">
+        <h3>🏸 バドミントン指導（対面：仙台周辺）</h3>
+        <p><b>60分：4,000円〜</b></p>
+        <p style="font-size:0.9rem; color:#555;">
+          ※体育館代・コート代は別途<br>
+          ※交通費が発生する場合は事前に相談します
+        </p>
+        <p style="font-size:0.9rem; color:#555;">
+          ※ジュニアチームの練習補助も、状況次第で対応可能です
+        </p>
+      </div>
 
-        <div class="price-item">
-          <h3>🎬 動画編集レクチャー（VLLO）</h3>
-          <p><b>60分：4,500円</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            カット編集・テロップ（簡易）・BGM・効果音・ショート動画化など
-          </p>
-        </div>
+      <div class="price-section">
+        <h3>🎬 動画編集・YouTube投稿サポート（VLLO）</h3>
+        <p><b>動画編集レクチャー（60分）：4,500円</b></p>
+        <p><b>YouTube投稿サポート（60分）：4,500円</b></p>
+        <p><b>動画編集代行（単発）</b></p>
+        <p>・ショート（〜60秒）：<b>3,000円〜</b></p>
+        <p>・YouTube（〜5分）：<b>6,000円〜</b></p>
+        <p style="font-size:0.9rem; color:#555;">
+          ※テロップが多い場合やフル字幕は追加料金になります
+        </p>
 
-        <div class="price-item">
-          <h3>🎬 YouTube投稿サポート</h3>
-          <p><b>60分：4,500円</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            アップロード、タイトル、概要欄、サムネ相談など
-          </p>
-        </div>
+        <p style="margin-top:12px;"><b>月契約プラン（ショート編集：〜60秒）</b></p>
+        <p>・月4本まで：<b>10,000円</b></p>
+        <p>・月6本まで：<b>13,500円</b></p>
+        <p>・月8本まで：<b>18,000円</b></p>
 
-        <div class="price-item">
-          <h3>🎬 動画編集代行（単発）</h3>
-          <p><b>ショート（〜60秒）：3,000円〜</b></p>
-          <p><b>YouTube（〜5分）：6,000円〜</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            ※テロップが多い場合やフル字幕は追加料金になります
-          </p>
-        </div>
+        <p style="font-size:0.9rem; color:#555; margin-top:10px;">
+          ※素材（動画・画像など）は依頼者側で用意してください<br>
+          ※修正は1回まで（軽微なもの）<br>
+          ※フル字幕・大量テロップは追加料金<br>
+          ※納期は混雑状況により相談になります<br>
+          ※月内消化（翌月繰越なし）
+        </p>
+      </div>
 
-        <div class="price-item">
-          <h3>🎸 ギター指導（対面：仙台周辺）</h3>
-          <p><b>60分：4,000円</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            ※スタジオ代は別途（割り勘 or 実費）
-          </p>
-          <p style="font-size: 0.9rem; color: #555;">
-            ※交通費が発生する場合は事前に相談します
-          </p>
-        </div>
+      <div class="price-section">
+        <h3>🎥 ライブ撮影（固定カメラ）</h3>
+        <p><b>約30分：4,500円 + 交通費</b></p>
+        <p><b>約60分：6,500円 + 交通費</b></p>
+        <p style="font-size:0.9rem; color:#555;">
+          ※カメラ固定で撮影します<br>
+          ※使用機材：Xperia 1 VII（プロ機材ではありません）<br>
+          ※その他は相談可
+        </p>
+      </div>
 
-        <div class="price-item">
-          <h3>🎸 機材購入相談・同行</h3>
-          <p><b>60分：4,000円〜</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            楽器店での試奏サポート、アンプ・エフェクター相談など
-          </p>
-          <p style="font-size: 0.9rem; color: #555;">
-            ※同行の場合は交通費別途
-          </p>
-        </div>
-
-        <div class="price-item">
-          <h3>🏸 バドミントン指導（対面：仙台周辺）</h3>
-          <p><b>60分：4,000円〜</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            ※体育館代・コート代は別途
-          </p>
-        </div>
-
-        <div class="price-item">
-          <h3>🏸 ジュニアチーム練習補助</h3>
-          <p><b>60分：4,000円〜</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            ※体育館代・交通費は別途
-          </p>
-        </div>
-
-        <div class="price-item">
-          <h3>💪 力仕事・生活サポート</h3>
-          <p><b>軽めの作業：3,500円〜</b></p>
-          <p><b>重めの作業：1時間 5,000円〜</b></p>
-          <p style="font-size: 0.9rem; color: #555;">
-            内容・時期（夏季作業など）により変動します
-          </p>
-        </div>
-
+      <div class="price-section">
+        <h3>💪 力仕事・生活サポート</h3>
+        <p><b>軽めの作業：3,500円〜</b></p>
+        <p><b>重めの作業：1時間 5,000円〜</b></p>
+        <p style="font-size:0.9rem; color:#555;">
+          内容・時期（夏季作業など）により変動します
+        </p>
+        <p style="font-size:0.9rem; color:#555; margin-top:10px;">
+          例：荷物運び、買い物補助、片付け、草取りなど
+        </p>
       </div>
 
       <div class="discount-box">
@@ -400,29 +381,18 @@
         （例：30分 2,000円 / 60分 3,500円）<br>
         ※対面の場合、交通費・施設代は別途になります。
       </div>
-
-      <div class="sub-card">
-        <b>🎬 月契約プラン（ショート編集：〜60秒）</b><br><br>
-        ・月4本まで：<b>10,000円</b><br>
-        ・月6本まで：<b>13,500円</b><br>
-        ・月8本まで：<b>18,000円</b><br><br>
-
-        <span style="color:#555; font-size:0.9rem;">
-          ※素材（動画・画像など）は依頼者側で用意してください<br>
-          ※修正は1回まで（軽微なもの）<br>
-          ※フル字幕・大量テロップは追加料金<br>
-          ※納期は混雑状況により相談になります<br>
-          ※月内消化（翌月繰越なし）
-        </span>
-      </div>
     </div>
 
     <div class="card">
       <h2>作例・参考リンク</h2>
       <ul class="info-list link-list">
         <li>
-          ライブ映像（編集例）：
+          ライブ映像（演奏・撮影例）：
           <a href="https://youtu.be/XB93TZEgNYE" target="_blank">YouTubeで見る</a>
+        </li>
+        <li>
+          動画編集例：
+          <a href="https://youtu.be/9ls7Rkiq6Zs?si=F1UTWONbMrfZ4U7Q" target="_blank">YouTubeで見る</a>
         </li>
         <li>
           AIホラー動画（制作例）：
@@ -433,6 +403,7 @@
           <a href="https://note.com/proper_acacia969/n/nc5ebd950a8e8?sub_rt=share_pw" target="_blank">noteで見る</a>
         </li>
       </ul>
+
       <p style="font-size: 0.9rem; color: #555;">
         ※動画編集はVLLOを使用します（スマホ編集中心です）。<br>
         VLLO内のBGM・効果音素材（有料プラン）を使った編集も可能です。
