@@ -77,7 +77,7 @@
       color: #3a2416;
       margin-bottom: 8px;
       margin-top: 0px;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
     }
 
     .mini {
@@ -130,26 +130,16 @@
       margin-bottom: 10px;
     }
 
-    /* 2列ブロック用 */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-top: 18px;
+    .price {
+      background: rgba(255, 255, 255, 0.65);
+      border-radius: 16px;
+      padding: 14px;
+      border: 1px solid rgba(180, 140, 90, 0.25);
+      margin-top: 12px;
     }
 
-    .grid-card {
-      background: rgba(255, 250, 245, 0.92);
-      border-radius: 22px;
-      padding: 22px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.10);
-      border: 1px solid rgba(210, 180, 140, 0.35);
-    }
-
-    @media (max-width: 850px) {
-      .grid-2 {
-        grid-template-columns: 1fr;
-      }
+    .price b {
+      color: #3a2416;
     }
 
     footer {
@@ -234,200 +224,158 @@
     </div>
 
     <div class="card">
-      <h2>できること</h2>
-
-      <div class="grid-2">
-
-        <div class="grid-card">
-          <h3>① 相談（仕事・学校・人間関係など）</h3>
-          <p>
-            誰かに話すだけで整理できることも多いと思います。<br>
-            気軽にご相談ください。
-          </p>
-        </div>
-
-        <div class="grid-card">
-          <h3>② ギター指導（初心者向け・ギター中心）</h3>
-          <p>
-            ギターをこれから始めたい方、初心者の方向けです。<br>
-            ベースも初歩的な範囲なら対応可能です。<br><br>
-            <b>アンプからの音出し</b>など、初歩的なことも問題ありません。
-          </p>
-
-          <ul class="info-list">
-            <li>ギターの基本（構え方・コード・リズム）</li>
-            <li>練習方法相談</li>
-            <li>機材購入相談（必要ならお店同伴も可能）</li>
-          </ul>
-
-          <p class="mini">
-            弦交換サポートも可能です（別途料金）
-          </p>
-
-          <p>
-            ▶ ライブ映像例：<br>
-            <a href="https://youtu.be/XB93TZEgNYE" target="_blank">YouTubeライブ映像はこちら</a>
-          </p>
-        </div>
-
-        <div class="grid-card">
-          <h3>③ バドミントン指導（中級まで）</h3>
-          <p>
-            社会人の方、初心者～中級の方向けです。<br>
-            ジュニアチームの練習補助等も可能です。
-          </p>
-        </div>
-
-        <div class="grid-card">
-          <h3>④ 動画編集（VLLOのみ対応）</h3>
-          <p>
-            スマホアプリ <b>VLLO</b> を使った編集のみ可能です。<br>
-            素材（動画・画像など）は依頼者様でご用意をお願いいたします。<br><br>
-            YouTubeへのアップ方法のサポートも可能です（簡易的な範囲）。
-          </p>
-
-          <p>
-            ▶ 編集例：<br>
-            <a href="https://youtu.be/yKgGy-7lCn4" target="_blank">AIホラー動画（例）</a><br>
-            <a href="https://youtu.be/9ls7Rkiq6Zs" target="_blank">編集例（ショート動画）</a><br>
-            <a href="https://youtu.be/XB93TZEgNYE" target="_blank">ライブ映像のような編集も可</a>
-          </p>
-        </div>
-
-        <div class="grid-card">
-          <h3>⑤ 撮影（ライブ・練習・ダンス等）</h3>
-          <p>
-            ライブ撮影だけでなく、バンド練習・ダンスグループなどの撮影も可能です。<br><br>
-            撮影機材は <b>Xperia 1 VII</b> のみで行います（プロ機材ではありません）。<br>
-            カメラは固定での撮影になります。
-          </p>
-
-          <p>
-            撮影データ保存用に <b>MicroSDカード（SD）</b>をご用意ください。<br>
-            撮影後にSDへデータを移し、返却します。<br>
-            ※こちらでSDを用意することも可能です（SD代のみ頂きます）。
-          </p>
-
-          <p>
-            ▶ MicroSDカードの詳細・価格目安は<br>
-            <a href="sd.html">こちらのページ</a>をご覧ください。
-          </p>
-
-          <p class="mini">
-            ※炎天下の場合、スマホ温度上昇により撮影不可になる可能性があります。
-          </p>
-        </div>
-
-        <div class="grid-card">
-          <h3>⑥ 力仕事・買い物補助など</h3>
-          <p>
-            荷物運び、引っ越し補助、買い物補助など対応可能です。<br>
-            仙台周辺だけでなく遠方もご相談ください。
-          </p>
-
-          <p class="mini">
-            ※内容・距離・作業内容により料金は変動します。
-          </p>
-        </div>
-
-        <div class="grid-card">
-          <h3>⑦ ホームページ作成（GitHub Pages限定）</h3>
-          <p>
-            <b>現在ご覧いただいているような、シンプルなホームページ作成</b>も対応可能です。<br>
-            GitHub Pages（無料）を利用した個人向けサイト限定になります。
-          </p>
-
-          <div class="note">
-            ※WordPress、独自ドメイン設定、予約システム、決済機能などの高度な機能は対応不可です。<br>
-            ※納品後の大幅な修正や継続的な更新作業は基本的に対応できません。<br>
-            （簡単な修正は内容によって相談可）
-          </div>
-        </div>
-
-      </div>
+      <h2>オンライン相談のやり方について</h2>
+      <p>
+        ZoomやLINE通話など、オンラインが初めての方でも安心できるように、簡単な手順ページを用意しました。
+      </p>
+      <a class="btn" href="online.html">オンライン手順ページを見る</a>
     </div>
 
     <div class="card">
-      <h2>料金（目安）</h2>
+      <h2>サービス内容・料金</h2>
 
-      <div class="grid-2">
-
-        <div class="grid-card">
-          <h3>相談</h3>
-          <ul class="info-list">
-            <li>30分：3,000円</li>
-            <li>60分：4,500円</li>
-          </ul>
-          <p class="mini">※オンライン対応（全国）</p>
-        </div>
-
-        <div class="grid-card">
-          <h3>ギター指導</h3>
-          <ul class="info-list">
-            <li>30分：3,000円</li>
-            <li>60分：4,500円</li>
-            <li>弦交換サポート：1,000円（弦代別）</li>
-          </ul>
-          <p class="mini">※オンライン対応（全国）</p>
-        </div>
-
-        <div class="grid-card">
-          <h3>バドミントン指導</h3>
-          <ul class="info-list">
-            <li>30分：3,000円</li>
-            <li>60分：4,500円</li>
-          </ul>
-          <p class="mini">※対面のみ（体育館代・交通費別）</p>
-        </div>
-
-        <div class="grid-card">
-          <h3>動画編集（VLLO）</h3>
-          <ul class="info-list">
-            <li>60分：4,500円</li>
-          </ul>
-          <p class="mini">※オンライン対応（全国）</p>
-        </div>
-
-        <div class="grid-card">
-          <h3>撮影（ライブ・練習・ダンス等）</h3>
-          <ul class="info-list">
-            <li>30分程度：4,000円</li>
-            <li>60分程度：6,500円</li>
-          </ul>
-          <p class="mini">※対面のみ（交通費・入場料別）</p>
-        </div>
-
-        <div class="grid-card">
-          <h3>力仕事・買い物補助など</h3>
-          <ul class="info-list">
-            <li>3,500円〜（内容により変動）</li>
-          </ul>
-          <p class="mini">※距離・作業内容により変動します</p>
-        </div>
-
-        <div class="grid-card">
-          <h3>ホームページ作成（GitHub Pages）</h3>
-          <ul class="info-list">
-            <li>1ページ：10,000円〜</li>
-            <li>2ページ：15,000円〜</li>
-          </ul>
-          <p class="mini">※シンプルなサイト限定</p>
-        </div>
-
-        <div class="grid-card">
-          <h3>その他</h3>
-          <p>
-            上記にない内容でも、対応できる場合があります。<br>
-            <b>必要な事があればご相談ください。</b>
-          </p>
-
-          <p class="mini">
-            ※対面の場合、交通費・施設費（スタジオ代など）は別途になります。<br>
-            ※内容によっては追加料金が発生する場合があります。
-          </p>
-        </div>
-
+      <div class="note">
+        <b>※対面の場合：</b>交通費・施設費（体育館代、スタジオ代、入場料など）は別途になります。<br>
+        <b>※オンラインの場合：</b>全国対応です。
       </div>
+
+      <hr>
+
+      <h3>① 相談（仕事・学校・人間関係など）</h3>
+      <p>
+        誰かに話すだけで整理できることも多いと思います。<br>
+        気軽にご相談ください。
+      </p>
+      <div class="price">
+        <b>料金：</b>30分 3,000円 / 60分 4,500円<br>
+        <span class="mini">※オンライン対応（全国）</span>
+      </div>
+
+      <hr>
+
+      <h3>② ギター指導（初心者向け・ギター中心）</h3>
+      <p>
+        ギターをこれから始めたい方、初心者の方向けです。<br>
+        ベースも初歩的な範囲なら対応可能です。<br><br>
+        <b>アンプからの音出し</b>など、初歩的なことも問題ありません。
+      </p>
+      <ul class="info-list">
+        <li>ギターの基本（構え方・コード・リズム）</li>
+        <li>練習方法相談</li>
+        <li>機材購入相談（必要ならお店同伴も可能）</li>
+      </ul>
+      <p class="mini">※弦交換サポートも可能です。</p>
+      <p>
+        ▶ ライブ映像例：<br>
+        <a href="https://youtu.be/XB93TZEgNYE" target="_blank">YouTubeライブ映像はこちら</a>
+      </p>
+      <div class="price">
+        <b>料金：</b>30分 3,000円 / 60分 4,500円<br>
+        <b>弦交換サポート：</b>1,000円（弦代別）<br>
+        <span class="mini">※オンライン対応（全国）</span>
+      </div>
+
+      <hr>
+
+      <h3>③ バドミントン指導（中級まで）</h3>
+      <p>
+        社会人の方、初心者～中級の方向けです。<br>
+        ジュニアチームの練習補助等も可能です。
+      </p>
+      <div class="price">
+        <b>料金：</b>30分 3,000円 / 60分 4,500円<br>
+        <span class="mini">※対面のみ（体育館代・交通費別）</span>
+      </div>
+
+      <hr>
+
+      <h3>④ 動画編集（VLLOのみ対応）</h3>
+      <p>
+        スマホアプリ <b>VLLO</b> を使った編集のみ可能です。<br>
+        素材（動画・画像など）は依頼者様でご用意をお願いいたします。<br><br>
+        YouTubeへのアップ方法のサポートも可能です（簡易的な範囲）。
+      </p>
+
+      <p>
+        ▶ 編集例：<br>
+        <a href="https://youtu.be/yKgGy-7lCn4" target="_blank">AIホラー動画（例）</a><br>
+        <a href="https://youtu.be/9ls7Rkiq6Zs" target="_blank">編集例（ショート動画）</a><br>
+        <a href="https://youtu.be/XB93TZEgNYE" target="_blank">ライブ映像のような編集も可</a>
+      </p>
+
+      <div class="price">
+        <b>料金：</b>60分 4,500円<br>
+        <span class="mini">※オンライン対応（全国）</span>
+      </div>
+
+      <hr>
+
+      <h3>⑤ 撮影（ライブ・練習・ダンス等）</h3>
+      <p>
+        ライブ撮影だけでなく、バンド練習・ダンスグループなどの撮影も可能です。<br><br>
+        撮影機材は <b>Xperia 1 VII</b> のみで行います（プロ機材ではありません）。<br>
+        カメラは固定での撮影になります。
+      </p>
+
+      <p>
+        撮影データ保存用に <b>MicroSDカード（SD）</b>をご用意ください。<br>
+        撮影後にSDへデータを移し、返却します。<br>
+        ※こちらでSDを用意することも可能です（SD代のみ頂きます）。
+      </p>
+
+      <p>
+        ▶ MicroSDカードの詳細・価格目安は<br>
+        <a href="sd.html">こちらのページ</a>をご覧ください。
+      </p>
+
+      <p class="mini">
+        ※炎天下の場合、スマホ温度上昇により撮影不可になる可能性があります。
+      </p>
+
+      <div class="price">
+        <b>料金：</b>30分程度 4,000円 / 60分程度 6,500円<br>
+        <span class="mini">※対面のみ（交通費・入場料別）</span>
+      </div>
+
+      <hr>
+
+      <h3>⑥ 力仕事・買い物補助など</h3>
+      <p>
+        荷物運び、引っ越し補助、買い物補助など対応可能です。<br>
+        仙台周辺だけでなく遠方もご相談ください。
+      </p>
+
+      <div class="price">
+        <b>料金：</b>3,500円〜（内容により変動）<br>
+        <span class="mini">※距離・作業内容により変動します</span>
+      </div>
+
+      <hr>
+
+      <h3>⑦ ホームページ作成（GitHub Pages限定）</h3>
+      <p>
+        <b>現在ご覧いただいているような、シンプルなホームページ作成</b>も対応可能です。<br>
+        GitHub Pages（無料）を利用した個人向けサイト限定になります。
+      </p>
+
+      <div class="note">
+        ※WordPress、独自ドメイン設定、予約システム、決済機能などの高度な機能は対応不可です。<br>
+        ※納品後の大幅な修正や継続的な更新作業は基本的に対応できません。<br>
+        （簡単な修正は内容によって相談可）
+      </div>
+
+      <div class="price">
+        <b>料金：</b>1ページ 10,000円〜 / 2ページ 15,000円〜
+      </div>
+
+      <hr>
+
+      <h3>その他</h3>
+      <p>
+        上記にない内容でも、対応できる場合があります。<br>
+        <b>必要な事があればご相談ください。</b>
+      </p>
+
     </div>
 
     <div class="card">
