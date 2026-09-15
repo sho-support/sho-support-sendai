@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHO AI STUDIO</title><meta name="description" content="AI動画の企画・生成・編集・品質確認・YouTube/SNS投稿を支援するWindows向けデスクトップアプリです。">
+<style>
+:root{--bg:#07131d;--panel:#0d2230;--line:#21465c;--text:#f4f7fb;--muted:#a8bdca;--accent:#e2b85f;--teal:#72c9c6}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;background:#07131d;color:var(--text);line-height:1.75}
+.wrap{width:min(980px,calc(100% - 32px));margin:0 auto}header{border-bottom:1px solid var(--line);background:#07131d;position:sticky;top:0}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}.brand{font-weight:800;font-size:20px}.brand span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px}.hero{padding:64px 0 36px}.badge{display:inline-block;border:1px solid var(--line);padding:4px 10px;border-radius:999px;color:var(--teal)}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.12;margin:16px 0}h2{font-size:28px;margin:8px 0}.lead{font-size:18px;color:var(--muted);max-width:760px}
+.card{background:#0d2230;border:1px solid var(--line);border-radius:14px;padding:24px;margin:14px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.kicker{color:var(--teal);font-size:13px;font-weight:700;letter-spacing:.06em}p,li{color:#d6e0e7}.note{border-left:4px solid var(--accent);padding:12px 16px;background:rgba(226,184,95,.07)}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid var(--line);color:var(--text);margin-right:8px}.btn.primary{background:var(--accent);color:#181108}
+table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}th{color:var(--teal)}
+a{color:var(--teal)}footer{border-top:1px solid var(--line);margin-top:48px;padding:24px 0;color:var(--muted);font-size:13px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.nav{align-items:flex-start}nav{display:flex;flex-direction:column}nav a{margin-left:0}}
+</style></head><body>
+<header><div class="wrap nav"><div class="brand">SHO <span>AI STUDIO</span></div><nav><a href="#about">概要</a><a href="#google-data">Googleデータの利用</a><a href="privacy.html">プライバシーポリシー</a></nav></div></header>
+<main>
+<div class="wrap hero"><span class="badge">AI VIDEO WORKFLOW / DESKTOP APP</span><h1>AI動画制作から<br>投稿までを、ひとつの流れに。</h1>
+<p class="lead">SHO AI STUDIOは、AI動画の企画、動画生成、品質確認、編集、完成動画の管理、YouTubeへのアップロード・予約公開、SNS投稿準備を支援するWindows向けデスクトップアプリです。</p>
+<p><a class="btn primary" href="#about">機能を見る</a><a class="btn" href="privacy.html">プライバシーポリシー</a></p></div>
+<div class="wrap">
+<section id="about"><div class="kicker">ABOUT</div><h2>SHO AI STUDIOについて</h2><div class="grid">
+<div class="card"><h3>企画・生成</h3><p>動画テーマや構成を整理し、対応するAIサービスを利用して動画素材を生成します。</p></div>
+<div class="card"><h3>品質確認・編集</h3><p>生成した素材を確認し、再利用素材を含めた完成動画の作成・管理を支援します。</p></div>
+<div class="card"><h3>公開・予約</h3><p>YouTube Data APIを利用し、ユーザーが許可したYouTubeチャンネルへの動画アップロードや予約公開を行います。</p></div>
+</div></section>
+<section id="google-data"><div class="kicker">GOOGLE USER DATA</div><h2>Googleユーザーデータを利用する目的</h2><div class="card">
+<p>SHO AI STUDIOは、ユーザーが明示的にGoogleアカウント連携を行った場合に限り、YouTube Data APIを通じて、動画のアップロードおよび予約公開に必要な権限を利用します。</p>
+<ul><li>アクセスはOAuth同意画面で許可された範囲に限定します。</li><li>認証情報はSHO AI STUDIOを実行しているユーザーのPC上に保存します。</li><li>Googleユーザーデータを広告目的で販売・提供しません。</li><li>YouTube投稿機能に必要な目的以外では利用しません。</li></ul>
+<p class="note">Googleアカウント連携は任意です。連携しない場合でも、YouTube連携を必要としないローカル機能は利用できます。</p>
+</div></section>
+<section><div class="kicker">THIRD-PARTY SERVICES</div><h2>外部サービス</h2><div class="card"><p>ユーザーが選択した場合、BufferやCloudinary等を利用してInstagram、TikTok、Facebookなどへの投稿を補助する機能があります。これらはGoogle OAuthによるYouTube連携とは別の機能です。</p></div></section>
+<section><div class="kicker">PRIVACY</div><h2>プライバシー</h2><div class="card"><p>Googleユーザーデータへのアクセス、利用、保存、共有については、<a href="privacy.html">SHO AI STUDIO プライバシーポリシー</a>をご確認ください。</p></div></section>
+</div></main>
+<footer><div class="wrap">© 2026 SHO AI STUDIO　|　<a href="privacy.html">Privacy Policy</a></div></footer>
+</body></html>
